@@ -39,13 +39,13 @@ const App = () => {
       />
       <div>
         <Switch>
+          <Route path="/movies/:id">
+            <Movie />
+          </Route>
+
           <Route exact path="/">
             <MovieList movies={movieList} />
             {console.log(movieList)}
-          </Route>
-
-          <Route path="/movies/:id">
-            <Movie />
           </Route>
         </Switch>
       </div>
